@@ -27,7 +27,7 @@ library(calibrate)
 ## 1 - PRINCIPAL COMPONENTS ANALYSIS
 ###################################################
 
-nba <- read.table("final.csv")
+nba <- read.table("final_shot_logs.RData")
 nba <- nba[,c(16, 3, 6:10, 12, 14:15, 19, 21:27, 11, 13, 17, 18, 20)]
 
 trainIndex <- createDataPartition(nba$success, p=0.7, list=FALSE, times=1)
